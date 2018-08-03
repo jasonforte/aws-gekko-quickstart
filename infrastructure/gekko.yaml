@@ -1,0 +1,4 @@
+Parameters:
+  Cluster:
+    Type: String
+    Description: The target cluster for the Gekko
