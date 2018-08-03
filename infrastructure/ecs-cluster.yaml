@@ -32,7 +32,7 @@ Parameters:
 
     AWSRegionToAMI:
         Type: AWS::SSM::Parameter::Value<String>
-        Value: /aws/service/ecs/optimized-ami/amazon-linux/recommended
+        Default: /aws/service/ecs/optimized-ami/amazon-linux/recommended
 
 Resources:
 
