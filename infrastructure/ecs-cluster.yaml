@@ -32,7 +32,7 @@ Parameters:
 
     ECSOptimizedAMI:
         Type: AWS::SSM::Parameter::Value<String>
-        Default: /aws/service/ecs/optimized-ami/amazon-linux/recommended
+        Default: /aws/service/ecs/optimized-ami/amazon-linux/recommended/image_id
 
 Resources:
 
