@@ -51,7 +51,7 @@ Resources:
             TaskDefinition: !Ref TaskDefinition
             LoadBalancers:
                 - ContainerName: "website-service"
-                  ContainerPort: 8000
+                  ContainerPort: 3000
                   TargetGroupArn: !Ref TargetGroup
 
     TaskDefinition:
