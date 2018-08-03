@@ -76,7 +76,7 @@ Resources:
                   Options:
                       awslogs-group: !Ref AWS::StackName
                       awslogs-region: !Ref AWS::Region
-                      awslogs-prefix: gekko
+                      awslogs-stream-prefix: gekko
                 Links:
                   - redis
               - Name: redis
@@ -91,7 +91,7 @@ Resources:
                   Options:
                       awslogs-group: !Ref AWS::StackName
                       awslogs-region: !Ref AWS::Region
-                      awslogs-prefix: redis
+                      awslogs-stream-prefix: redis
             Volumes:
               - Name: redis
                 Host:
