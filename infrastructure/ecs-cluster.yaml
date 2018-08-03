@@ -30,7 +30,7 @@ Parameters:
         Description: Select the Security Group to use for the ECS cluster hosts
         Type: AWS::EC2::SecurityGroup::Id
 
-    AWSRegionToAMI:
+    ECSOptimizedAMI:
         Type: AWS::SSM::Parameter::Value<String>
         Default: /aws/service/ecs/optimized-ami/amazon-linux/recommended
 
