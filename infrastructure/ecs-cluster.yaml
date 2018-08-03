@@ -16,7 +16,7 @@ Parameters:
     ClusterSize:
         Description: How many ECS hosts do you want to initially deploy?
         Type: Number
-        Default: 4
+        Default: 2
 
     VPC:
         Description: Choose which VPC this ECS cluster should be deployed to
@@ -73,7 +73,7 @@ Mappings:
         ap-south-1:
             AMI: ami-2e461a41
         sa-east-1:
-            AMI: ami-d44008b8	
+            AMI: ami-d44008b8
 
 Resources:
 
@@ -99,7 +99,7 @@ Resources:
                 Timeout: PT15M
         UpdatePolicy:
             AutoScalingRollingUpdate:
-                MinInstancesInService: 1
+                MinInstancesInService: 0
                 MaxBatchSize: 1
                 PauseTime: PT15M
                 SuspendProcesses:
