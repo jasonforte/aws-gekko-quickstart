@@ -68,7 +68,7 @@ Resources:
                 DesiredCount: 1
                 ProductServiceUrl: !Join [ "/", [ !GetAtt ALB.Outputs.LoadBalancerUrl, "products" ]]
                 Listener: !GetAtt ALB.Outputs.Listener
-                Path: *
+                Path: '*'
                 ECSServiceAutoScalingRoleARN: !GetAtt ECS.Outputs.ECSServiceAutoScalingRole
 
     LifecycleHook:

@@ -33,7 +33,7 @@ Parameters:
     Path:
         Description: The path to register with the Application Load Balancer
         Type: String
-        Default: *
+        Default: '*'
 
     ECSServiceAutoScalingRoleARN:
         Description: The ECS service auto scaling role ARN
@@ -51,7 +51,7 @@ Resources:
             TaskDefinition: !Ref TaskDefinition
             LoadBalancers:
                 - ContainerName: "website-service"
-                  ContainerPort: 3000
+                  ContainerPort: 80
                   TargetGroupArn: !Ref TargetGroup
 
     TaskDefinition:
@@ -64,12 +64,10 @@ Resources:
                 Image: 375479154925.dkr.ecr.us-east-1.amazonaws.com/gekko:0.6.4
                 Memory: 128
                 Environment:
-                  - Name: HOST
-                    Value: 0.0.0.0
                   - Name: PORT
-                    Value: 3000
+                    Value: 80
                 PortMappings:
-                  - ContainerPort: 3000
+                  - ContainerPort: 80
                 MountPoints:
                   - SourceVolume: gekkohistory
                     ContainerPath: /usr/src/app/history
