@@ -1,6 +1,6 @@
 # Deploy the Gekko Trading Bot Platform on ECS with AWS CloudFormation
 
-Please see my corresponding blog post [here](https://jforte.me).
+Please see my corresponding blog post [here](https://www.jforte.me/2018/08/quickly-deploy-gekko-trading-platform-on-aws-with-cloudformation/).
 
 ## Launch Gekko On AWS with ECS
 
